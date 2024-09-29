@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Journal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Journal</h1>
+        <form id="journalForm">
+            <textarea id="entry" placeholder="How are you feeling today?" required></textarea>
+            <select id="mood" required>
+                <option value="">Select your mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="angry">Angry</option>
+                <option value="neutral">Neutral</option>
+            </select>
+            <button type="submit">Save Entry</button>
+        </form>
+        <h2>Your Entries</h2>
+        <div id="entries"></div>
+        <h2>Mood Analytics</h2>
+        <div id="analytics"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
